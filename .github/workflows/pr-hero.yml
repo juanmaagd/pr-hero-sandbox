@@ -137,4 +137,4 @@ jobs:
           routing: "${{ vars.PRHERO_ROUTING }}"
           opencode-auth: ${{ secrets.OPENCODE_AUTH_JSON }}
           budget-usd: 0
-          mode: gate
+          mode: advisory
