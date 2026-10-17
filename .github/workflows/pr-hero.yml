@@ -115,7 +115,7 @@ jobs:
         # The action uploads the run directory as an artifact itself, so
         # `pr-hero triage reply --from` has an input in CI (see action.yml).
         id: pr-hero
-        uses: juanmaagd/pr-hero@dev
+        uses: juanmaagd/pr-hero@feat/sandbox-cancel-probe
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           # Provide a Claude credential and/or OpenCode auth (never leave every
