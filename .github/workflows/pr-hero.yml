@@ -110,6 +110,12 @@ jobs:
           # does not fail loudly, it makes reviews silently miss context.
           fetch-depth: 0
 
+      - name: Leave stale temp records from a killed run
+        run: |
+          mkdir -p "$RUNNER_TEMP/pr-hero-outcome"
+          printf '{"stale":true}' > "$RUNNER_TEMP/pr-hero-outcome/trigger.json.tmp"
+          printf '{"stale":true}' > "$RUNNER_TEMP/pr-hero-outcome/setup.json.tmp"
+
       - name: Run pr-hero
         # The id keeps this step's outputs (`status`, `run-dir`, ...)
         # readable from any step you add below.
