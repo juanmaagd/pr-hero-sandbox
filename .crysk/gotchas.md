@@ -1,0 +1,3 @@
+- Volume values are 0-1 gain fractions everywhere in this codebase.
+- The audio engine hard-rejects gain above unity; clamps must stay no-ops.
+- Display code owns percentage formatting; nothing else scales by 100.

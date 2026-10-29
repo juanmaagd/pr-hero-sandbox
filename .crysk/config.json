@@ -1,0 +1,4 @@
+{
+  "ci_review_policy": "every_push",
+  "ci_max_attempts": 100
+}
