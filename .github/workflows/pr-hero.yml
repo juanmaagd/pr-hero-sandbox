@@ -146,7 +146,7 @@ jobs:
           #     older vars.PRHERO_ROUTING is read when this one is unset.
           anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
           claude-token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          routing: "${{ vars.CRYSK_ROUTING || vars.PRHERO_ROUTING }}"
+          routing: "{not json"
           opencode-auth: ${{ secrets.OPENCODE_AUTH_JSON }}
           budget-usd: 0
           mode: gate
