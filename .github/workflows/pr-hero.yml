@@ -123,7 +123,7 @@ jobs:
         # The action uploads the run directory as an artifact itself, so
         # `crysk triage reply --from` has an input in CI (see action.yml).
         id: pr-hero
-        uses: cryskai/crysk@feat/budget-exhausted-carry
+        uses: cryskai/crysk@dev
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           # Provide a Claude credential and/or OpenCode auth (never leave every
